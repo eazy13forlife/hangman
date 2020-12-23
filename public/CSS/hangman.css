@@ -1,0 +1,99 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+ul,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+:root {
+  --accent-clr: #f0f9e2;
+}
+
+body {
+  background-color: #146683;
+}
+header {
+  color: var(--accent-clr);
+  font-size: 1.5rem;
+  text-align: center;
+}
+.game {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hangman-container {
+  width: 65%;
+  color: var(--accent-clr);
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hangman-container p {
+  margin: 0.5em;
+}
+
+.guess-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.two {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+span {
+  font-weight: bold;
+}
+button {
+  display: block;
+  margin: 0.5em auto 0 auto;
+  font-size: 1.3rem;
+  background: white;
+  padding: 0 0.5em 0 0.5em;
+  border: 2px solid var(--accent-clr);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 200ms ease-in background-color;
+}
+button:hover {
+  background-color: #146683;
+  color: var(--accent-clr);
+}
+.each-letter {
+  display: inline-block;
+  width: 0.7em;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--accent-clr);
+  margin-left: 0.5em;
+  font-size: 1.8rem;
+}
+.space {
+  width: 0.7em;
+  display: inline-block;
+  margin-left: 0.5em;
+  text-align: center;
+  text-align: center;
+  border-bottom: 1px solid var(--accent-clr);
+  display: hidden;
+  font-size: 1.8rem;
+}
